@@ -1,0 +1,29 @@
+{
+    "name": "ofi/steganography",
+    "description": "PHP steganography library, Auto create image and encrypt message and then store to image",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "teguh02",
+            "email": "teguhrijanandi02@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ofi\\steganography\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ofi\\steganography\\Tests\\": "tests"
+        }
+    }
+}
