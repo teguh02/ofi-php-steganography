@@ -10,7 +10,7 @@ class steganography {
     /**
      * To encrypt data an store to image
      */
-    public static function encrypt($message, $text_to_image = null) {
+    public static function encrypt(String $message, String $text_to_image = null) {
         $file = makeImage::make($text_to_image);
 
         // Encode the message into a binary string.
@@ -91,7 +91,7 @@ class steganography {
     /**
      * To decrypt data from image file
      */
-    static public function decrypt($file) {
+    static public function decrypt(String $file) {
 
         if(!is_file($file)) {
           throw new \Exception("File " . $file . ' not found');
